@@ -46,7 +46,7 @@ export default function HeroSection() {
               View Projects
             </a>
             <a 
-              href="https://drive.google.com/file/d/1zhiaASlP1TcLjA_yVhg64iB2LUlfTrGb/view?usp=sharing" 
+              href="https://drive.google.com/file/d/13U6siH34Mhaw_5JGShEOontQfiEWtEj2/view?usp=sharing" 
               className="px-6 py-2.5 bg-secondary text-foreground rounded-full font-medium hover:bg-secondary/80 transition-colors flex items-center gap-2"
               target="_blank"
               rel="noopener noreferrer"
