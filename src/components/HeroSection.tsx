@@ -65,10 +65,10 @@ export default function HeroSection() {
             <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-icon">
               <Github size={20} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <a href="https://www.linkedin.com/in/yash-patil-9a28a4320/" target="_blank" rel="noopener noreferrer" className="social-icon">
               <Linkedin size={20} />
             </a>
-            <a href="mailto:example@example.com" className="social-icon">
+            <a href="mailto:patilyash11102002@gmail.com" className="social-icon">
               <Mail size={20} />
             </a>
           </div>
