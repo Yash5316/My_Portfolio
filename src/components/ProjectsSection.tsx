@@ -19,8 +19,8 @@ const projects: Project[] = [
     description: "A voice-controlled command line interface that uses Symbl.ai's speech recognition to execute commands.",
     image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
     technologies: ["Python", "Symbl.ai API", "Speech Recognition", "Command Line"],
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "https://smartty.vercel.app/",
+    githubUrl: "https://github.com/Yash5316/Voice-Enabled-Command-Line-Interface-Using-Symbl.ai",
     challenge: "Creating a reliable voice recognition system that could accurately interpret commands in various accents and environments.",
     solution: "Integrated Symbl.ai's advanced speech recognition API with custom command parsing logic and implemented noise filtering algorithms."
   },
@@ -40,7 +40,7 @@ const projects: Project[] = [
     image: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
     technologies: ["Python", "SQL", "OOP", "User Authentication", "Transaction Management"],
     liveUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/Yash5316/ATM-Simulator-and-Bank-Management-System",
     challenge: "Ensuring secure transaction processing while maintaining an intuitive user interface that mimics real ATM operations.",
     solution: "Designed a multi-layered security system with encryption for sensitive data and implemented transaction atomicity with rollback capabilities."
   }
