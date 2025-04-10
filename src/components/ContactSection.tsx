@@ -1,6 +1,5 @@
-
 import { useState } from "react";
-import { Github, Linkedin, Mail, MapPin, Phone, Send } from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, Phone, Send, Globe } from "lucide-react";
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -13,12 +12,12 @@ export default function ContactSection() {
   const [submitSuccess, setSubmitSuccess] = useState(false);
   const [submitError, setSubmitError] = useState("");
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
     // Simulate form submission
@@ -38,11 +37,11 @@ export default function ContactSection() {
 
   return (
     <section id="contact" className="py-24 bg-background">
-      <div className="container-section">
-        <h2 className="section-title">Get In Touch</h2>
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl font-bold text-center mb-12">Get In Touch</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div className="animate-fade-in-up">
+          <div>
             <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
             
             <div className="space-y-6">
@@ -53,10 +52,10 @@ export default function ContactSection() {
                 <div>
                   <h4 className="font-medium">Email</h4>
                   <a 
-                    href="mailto:example@example.com" 
+                    href="mailto:ypatil5316@gmail.com" 
                     className="text-foreground/70 hover:text-primary transition-colors"
                   >
-                    example@example.com
+                    ypatil5316@gmail.com
                   </a>
                 </div>
               </div>
@@ -68,10 +67,10 @@ export default function ContactSection() {
                 <div>
                   <h4 className="font-medium">Phone</h4>
                   <a 
-                    href="tel:+1234567890" 
+                    href="tel:+919579556122" 
                     className="text-foreground/70 hover:text-primary transition-colors"
                   >
-                    +1 (234) 567-890
+                    +91 9579556122
                   </a>
                 </div>
               </div>
@@ -82,25 +81,28 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="font-medium">Location</h4>
-                  <p className="text-foreground/70">Pune, Maharashtra, India</p>
+                  <p className="text-foreground/70">Pimpri-Chinchwad, Maharashtra, India</p>
                 </div>
               </div>
               
               <div>
                 <h4 className="font-medium mb-3">Connect with me</h4>
                 <div className="flex gap-4">
-                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-icon">
-                    <Github size={20} />
+                  <a href="https://github.com/Yash5316" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors">
+                    <Github size={20} className="text-primary" />
                   </a>
-                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon">
-                    <Linkedin size={20} />
+                  <a href="https://linkedin.com/in/yashpatil" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors">
+                    <Linkedin size={20} className="text-primary" />
+                  </a>
+                  <a href="https://yashportfoli.netlify.app/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors">
+                    <Globe size={20} className="text-primary" />
                   </a>
                 </div>
               </div>
             </div>
           </div>
           
-          <div className="animate-fade-in-up" style={{ animationDelay: '200ms' }}>
+          <div>
             <h3 className="text-2xl font-semibold mb-6">Send Me a Message</h3>
             
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -112,7 +114,7 @@ export default function ContactSection() {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 rounded-md border border-border bg-card/50 focus:outline-none focus:ring-2 focus:ring-primary/50"
+                  className="w-full px-4 py-2 rounded-md border border-gray-300 bg-white/50 focus:outline-none focus:ring-2 focus:ring-primary/50"
                   required
                 />
               </div>
@@ -125,7 +127,7 @@ export default function ContactSection() {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 rounded-md border border-border bg-card/50 focus:outline-none focus:ring-2 focus:ring-primary/50"
+                  className="w-full px-4 py-2 rounded-md border border-gray-300 bg-white/50 focus:outline-none focus:ring-2 focus:ring-primary/50"
                   required
                 />
               </div>
@@ -138,7 +140,7 @@ export default function ContactSection() {
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 rounded-md border border-border bg-card/50 focus:outline-none focus:ring-2 focus:ring-primary/50"
+                  className="w-full px-4 py-2 rounded-md border border-gray-300 bg-white/50 focus:outline-none focus:ring-2 focus:ring-primary/50"
                   required
                 />
               </div>
@@ -151,7 +153,7 @@ export default function ContactSection() {
                   value={formData.message}
                   onChange={handleChange}
                   rows={4}
-                  className="w-full px-4 py-2 rounded-md border border-border bg-card/50 focus:outline-none focus:ring-2 focus:ring-primary/50"
+                  className="w-full px-4 py-2 rounded-md border border-gray-300 bg-white/50 focus:outline-none focus:ring-2 focus:ring-primary/50"
                   required
                 ></textarea>
               </div>
@@ -159,7 +161,7 @@ export default function ContactSection() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="px-6 py-3 bg-primary text-primary-foreground rounded-md font-medium hover:bg-primary/90 transition-colors flex items-center justify-center disabled:bg-primary/70"
+                className="px-6 py-3 bg-blue-600 text-white rounded-md font-medium hover:bg-blue-700 transition-colors flex items-center justify-center disabled:bg-blue-400"
               >
                 {isSubmitting ? (
                   <span className="flex items-center">
